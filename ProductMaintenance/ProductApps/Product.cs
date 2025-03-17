@@ -63,7 +63,8 @@ namespace ProductApps
         //Calculate the total payment
         public void calTotalPayment()
         {
-            TotalPayment = Price * Quantity;
+            Delivery = 25.00m; // Fixed delivery charge
+            TotalPayment = (Price * Quantity) + Delivery;
         }
     }
 }
